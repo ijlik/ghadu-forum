@@ -97,7 +97,7 @@ class DashboardController extends Controller
         return view('profile',[
           'user' => $user,
           'status' => 'danger',
-          'message' => 'Iam sorry, there is some problem, please try again'
+          'message' => 'I am sorry, there is some problem, please try again later'
         ]);
       }
     }
@@ -137,7 +137,7 @@ class DashboardController extends Controller
           'category' => $category,
         'ticket' => $tickets,
           'status' => 'danger',
-          'message' => 'Iam sorry, there is some problem, please try again'
+          'message' => 'I am sorry, there is some problem, please try again later'
         ]);
       }
       
