@@ -27,7 +27,6 @@ class HomeController extends Controller
       $index = 0;
       for($i=0; $i<ceil($category->count()/3); $i++)
         {
-//           echo $i."<br>";
            for($j=0; $j<3; $j++){
              if ($index == $category->count()){
                break;
