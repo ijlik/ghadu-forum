@@ -47,7 +47,7 @@
                             <h1>Find <strong>the answer</strong> of your problems</h1>
                             <p>Welcome to the Ghadu Forum! Search your answers with the search box above, or if you're stuck you can create a support ticket.</p>
                             @else
-                            <h1>Search your <strong>problems</strong></h1>
+                            <h1>Search your <strong>problems about farming</strong></h1>
                             @endif
                         </div>
                         <div class="widget clearfix">
