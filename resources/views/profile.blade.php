@@ -62,14 +62,12 @@
                                    <hr>
                                         <form class="sidebar-login" action="/profile" method="POST">
                                             {{ csrf_field() }}
-                                          <label for="exampleTextarea" class="col-md-4 control-label">Nama</label>
                                             <input type="text" class="form-control" placeholder="Name" name="name" value="{{ $user->name }}">
                                             @if ($errors->has('name'))
                                               <span class="help-block">
                                                 <strong>{{ $errors->first('name') }}</strong>
                                               </span>
                                             @endif
-                                          <label for="exampleTextarea" class="col-md-4 control-label">Email</label>
                                             <input type="email" class="form-control" placeholder="Email Address" value="{{ $user->email }}">
                                             @if ($errors->has('email'))
                                               <span class="help-block">
@@ -108,7 +106,6 @@
                                     <div class="panel-body">
                                         <form class="sidebar-login" action="/profile/info" method="POST">
                                             {{ csrf_field() }}
-                                            <label for="exampleTextarea" class="col-md-4 control-label">NIK (Nomor KTP)</label>
                                             <input type="text" class="form-control" placeholder="NIK (Nomor KTP)" name="nik" value="{{ $user->nik }}">
                                             @if ($errors->has('nik'))
                                               <span class="help-block">
@@ -124,7 +121,6 @@
                                                 <strong>{{ $errors->first('alamat') }}</strong>
                                               </span>
                                             @endif
-                                            <label for="exampleTextarea" class="col-md-4 control-label">Nomor Telp</label>
                                             <input type="text" class="form-control" placeholder="Nomor Hp" name="no_telp" value="{{ $user->no_telp }}">
                                             @if ($errors->has('no_telp'))
                                               <span class="help-block">
@@ -132,9 +128,8 @@
                                               </span>
                                             @endif
                                             <div class="form-group">
-                                              <label for="exampleTextarea" class="col-md-4 control-label">Pekerjaan</label>
                                               <select class="form-control" id="exampleSelect1" name="pekerjaan">
-                                                  <option value="{{ $user->pekerjaan }}">{{ (is_null($user->pekerjaan)) ? "Please select pekerjaan" : $user->pekerjaan }}</option>
+                                                  <option value="{{ $user->pekerjaan }}">{{ (is_null($user->pekerjaan)) ? "Pilih pekerjaan" : $user->pekerjaan }}</option>
                                                   <option value="Peternak">Peternak</option>
                                                   <option value="Dokter Hewan">Dokter Hewan</option>
                                                   <option value="Distributor Pakan dan Nutrisi">Distributor Pakan dan Nutrisi</option>
